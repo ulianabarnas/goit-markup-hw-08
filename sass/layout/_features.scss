@@ -1,0 +1,31 @@
+.features {
+    padding-bottom: 0;
+}
+
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    >.item {
+        flex-basis: calc((100% - 90px) / 4);
+
+        &:not(:nth-child(4n)) {
+            margin-right: var(--card-set-gap);
+        }
+
+        &:not(:nth-last-child(-n + 4)) {
+            margin-bottom: var(--card-set-gap);
+        }
+    }
+}
+
+.icon-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: var(--secondary-bg-color);
+    border-radius: 4px;
+}

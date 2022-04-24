@@ -1,0 +1,37 @@
+.work-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    >.item {
+        flex-basis: calc((100% - 2 * var(--card-set-gap)) / 3);
+
+        &:not(:nth-child(3n)) {
+            margin-right: var(--card-set-gap);
+        }
+
+        &:not(:nth-last-child(-n + 3)) {
+            margin-bottom: var(--card-set-gap);
+        }
+    }
+}
+
+.thumb {
+    position: relative;
+
+    >.label {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    
+        width: 100%;
+        padding-top: 27px;
+        padding-bottom: 27px;
+        text-align: center;
+        background-color: rgba(47, 48, 58, 0.8);
+
+        .subtitle {
+            color: var(--extra-text-color);
+            margin-bottom: 0px;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+%input-focus,
+%comment-focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+%footer-subtitle {
+    color: var(--extra-text-color);
+    margin-bottom: 20px;
+}
