@@ -1,7 +1,19 @@
+// COMMON
 .logo {
     font-family: var(--secondary-font-family);
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.17;
     color: var(--logo-accent-color);
+}
+
+// PHONES and TABLETS
+@media screen and (max-width: 1199.98px) {
+    .logo {
+        @include font (700, 24px, 28px, 0.03em);
+    }
+}
+
+// only DESKTOP
+@media screen and (min-width: 1200px) {
+    .logo {
+        @include font (700, 26px, 31px, 0.03em);
+    }
 }
