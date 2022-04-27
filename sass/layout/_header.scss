@@ -14,8 +14,8 @@
     color: var(--logo-primary-color-header);
 }
 
-// 0-767px only phones
-@media screen and (max-width: 767.98px) {
+// 0-767px only PHONES
+@media screen and (max-width: 767px) {
     .header {
     position: relative;
     padding-top: 10px;
@@ -132,14 +132,14 @@
     }
 }
 
-// 768px - 1199px only tablet
+// 768px - 1199px only TABLETS
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
     .contacts__item:not(:last-child) {
         margin-bottom: 10px;
     }
 }
 
-// 768px + for tablet and desktop
+// 768px + TABLETS and DESKTOPS
 @media screen and (min-width: 768px) {
     .mobile-menu-btn, .mobile-menu {
         display: none;
@@ -167,7 +167,6 @@
         display: block;
         padding-top: 32px;
         padding-bottom: 32px;
-
         @include font (500, 14px, 16px, 0.02em);
         color: var(--secondary-text-color);
     }
@@ -201,22 +200,13 @@
     }
 
     .contacts__icon {
-        // width: 14px;
-        // height: 10px;
         margin-right: 8px;
         fill: currentColor;
     }
-
-    // .contacts__icon_small {
-    //     // width: 10px;
-    //     // height: 14px;
-    // }
 }
 
+// 1200px+ DESKTOPS
 @media screen and (min-width: 1200px) {
-    .logo {
-        font-size: 26px;
-    }
 
     .header__logo {
         margin-right: 94px;

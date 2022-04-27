@@ -413,7 +413,7 @@ img {
   color: var(--logo-primary-color-header);
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 767px) {
   .header {
     position: relative;
     padding-top: 10px;
@@ -591,9 +591,6 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .logo {
-    font-size: 26px;
-  }
   .header__logo {
     margin-right: 94px;
   }
@@ -645,12 +642,48 @@ img {
   }
 }
 
-@media screen and (max-width: 767.98px) {
+.button_primary {
+  min-width: 200px;
+  padding: 10px 20px;
+  color: var(--extra-text-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width: 1199.98px) {
   .hero {
     padding-top: 118px;
     padding-bottom: 118px;
     text-align: center;
   }
+  .hero__main-title {
+    width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .hero-overlay {
+    max-width: 480px;
+    min-height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/480px/hero-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: #c4c4c4;
+  }
+}
+
+@media screen and (max-width: 767.98px) and (min-device-pixel-ratio: 2), screen and (max-width: 767.98px) and (min-resolution: 192dpi), screen and (max-width: 767.98px) and (min-resolution: 2dppx) {
+  .hero-overlay {
+    background-image: url(../images/480px/hero-background@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
   .hero-overlay {
     max-width: 480px;
     min-height: 400px;
@@ -660,28 +693,6 @@ img {
     background-position: center;
     background-size: cover;
     background-color: #c4c4c4;
-  }
-}
-
-@media screen and (max-width: 767.98px) and (min-device-pixel-ratio: 2), screen and (max-width: 767.98px) and (min-resolution: 192dpi), screen and (max-width: 767.98px) and (min-resolution: 2dppx) {
-  .hero-overlay {
-    background-image: url(../../images/480px/hero-background@2x.jpg);
-  }
-}
-
-@media screen and (max-width: 767.98px) {
-  .hero__main-title {
-    width: 360px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-  }
-  .button_primary {
-    min-width: 200px;
-    padding: 10px 20px;
-    color: var(--extra-text-color);
-    background-color: var(--accent-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
 }
 
