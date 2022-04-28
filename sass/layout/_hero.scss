@@ -35,12 +35,11 @@
 // 0-1199px PHONES and TABLETS
 @media screen and (max-width: 1199.98px) {
     .hero {
-        padding-top: 118px;
-        padding-bottom: 118px;
+        padding: 118px 0px;
     }
 
     .hero__main-title {
-        width: 360px;
+        max-width: 360px;
     }
 }
 

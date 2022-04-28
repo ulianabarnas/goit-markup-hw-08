@@ -1,8 +1,6 @@
 body {
     font-family: var(--primary-font-family);
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @include font (400, 14px, 24px, 0.03em);
     background-color: var(--primary-bg-color);
     color: var(--primary-text-color);
 }

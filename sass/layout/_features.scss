@@ -1,31 +1,61 @@
-.features {
-    padding-bottom: 0;
+// COMMON
+.feature__icon-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-bg-color);
+    border-radius: 4px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
 }
 
-.feature-list {
-    display: flex;
-    flex-wrap: wrap;
+// 0-767px PHONES
+@media screen and (max-width: 767.98px) {
+    .feature__item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
 
-    >.item {
-        flex-basis: calc((100% - 90px) / 4);
+// TABLETS and DESKTOPS
+@media screen and (min-width: 768px) {
+    .feature__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
 
-        &:not(:nth-child(4n)) {
+// 768px - 1199px only TABLETS
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    
+    .feature__item {
+        flex-basis: calc((100% - 30px) / 2);
+
+        &:not(:nth-child(2n)) {
             margin-right: var(--card-set-gap);
         }
 
-        &:not(:nth-last-child(-n + 4)) {
+        &:not(:nth-last-child(-n + 2)) {
             margin-bottom: var(--card-set-gap);
         }
     }
 }
 
-.icon-background {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    background-color: var(--secondary-bg-color);
-    border-radius: 4px;
+// 1200px+ DESKTOPS
+@media screen and (min-width: 1200px) {
+    .features {
+        padding-bottom: 0;
+    }
+
+    .feature__item {
+        flex-basis: calc((100% - 90px) / 4);
+    
+        &:not(:nth-child(4n)) {
+            margin-right: var(--card-set-gap);
+        }
+    
+        &:not(:nth-last-child(-n + 4)) {
+            margin-bottom: var(--card-set-gap);
+        }
+    }
 }

@@ -1,4 +1,13 @@
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+// 0-1199px PHONES and TABLETS
+@media screen and (max-width: 1199.98px) {
+    .section {
+        padding: 60px 0px;
+    }
+}
+
+// 1200px+ DESKTOPS
+@media screen and (min-width: 1200px) {
+    .section {
+        padding: 94px 0px;
+    }
 }
