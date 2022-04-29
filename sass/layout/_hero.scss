@@ -43,7 +43,7 @@
     }
 }
 
-// 0-767px PHONES
+// 0-767px only PHONES
 @media screen and (max-width: 767.98px) {
     .hero-overlay {
         max-width: 480px;
@@ -66,7 +66,7 @@
     }
 }
 
-// 768px+ TABLETS
+// 768px+ only TABLETS
 @media screen and (min-width: 768px) {
     .hero-overlay {
         max-width: 768px;
@@ -89,7 +89,7 @@
     }
 }
 
-// 1200px+ DESKTOPS
+// 1200px+ only DESKTOPS
 @media screen and (min-width: 1200px) {
     .hero {
         padding-top: 200px;

@@ -1,6 +1,21 @@
+// COMMON
 .section__title {
-    margin-bottom: 50px;
     text-align: center;
-    @include font (700, 36px, 42px, 0.03em);
     color: var(--secondary-text-color);
+}
+
+// 0-1199px PHONES and TABLETS
+@media screen and (max-width: 1199.98px){
+    .section__title {
+        margin-bottom: 30px;
+        @include font (700, 28px, 33px, 0.03em);
+    }
+}
+
+// 1200px+ DESKTOPS
+@media screen and (min-width: 1200px) {
+    .section__title {
+        margin-bottom: 50px;
+        @include font (700, 36px, 42px, 0.03em);
+    }
 }

@@ -168,13 +168,28 @@ img {
 }
 
 .section__title {
-  margin-bottom: 50px;
   text-align: center;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16667;
-  letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+
+@media screen and (max-width: 1199.98px) {
+  .section__title {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17857;
+    letter-spacing: 0.03em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section__title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16667;
+    letter-spacing: 0.03em;
+  }
 }
 
 .subtitle {
@@ -857,40 +872,42 @@ img {
   background-color: var(--secondary-bg-color);
 }
 
-.team-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: calc(-1 * var(--card-set-gap));
-  margin-top: calc(-1 * var(--card-set-gap));
-  font-size: 16px;
-  line-height: 1.19;
-}
-
-.team-list > .item {
-  flex-basis: calc((100% - 4 * var(--card-set-gap)) / 4);
-  margin-left: var(--card-set-gap);
-  margin-top: var(--card-set-gap);
+.team__item {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
 
-.team-list .title {
+.team__item:not(:last-child) {
+  margin-bottom: var(--card-set-gap);
+}
+
+.team__content-wrapper {
+  text-align: center;
+  background-color: var(--primary-bg-color);
+}
+
+.team__name {
   margin-bottom: 10px;
   font-weight: 500;
-  font-size: inherit;
-  text-align: center;
+  font-size: 16px;
+  line-height: 1.1875;
+  letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 
-.team-list .position {
-  text-align: center;
+.team__position {
   margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.1875;
+  letter-spacing: 0.03em;
 }
 
-.team-content-wrapper {
-  padding: 30px 32px;
-  background-color: var(--primary-bg-color);
+@media screen and (max-width: 767.98px) {
+  .team__content-wrapper {
+    padding: 30px 30px 24px 30px;
+  }
 }
 
 .clients-list {
