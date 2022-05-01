@@ -5,6 +5,15 @@
     color: var(--secondary-text-color);
 }
 
+.subtitle_color_white {
+    color: var(--extra-text-color);
+    margin-bottom: 0px;
+}
+
+.footer__subtitle {
+    margin-bottom: 20px;
+}
+
 //0-767px only PHONES
 @media screen and (max-width: 767.98px) {
     .subtitle {

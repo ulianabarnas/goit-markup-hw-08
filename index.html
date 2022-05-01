@@ -630,78 +630,80 @@
     <!-- FOOTER SECTION -->
     <footer class="section footer">
       <div class="container footer-container">
-        <div class="left-side-wrapper">
-          <a class="logo link" href="./index.html" lang="en"
-            >Web<span class="logo__studio_color_white">Studio</span></a
-          >
-          <address class="address">
-            <ul class="address__list list">
-              <li class="address__item">
-                <a
-                  class="address__link address__link_color_white link"
-                  href="https://goo.gl/maps/qhGqYUwrLDQrgfdt8"
-                  target="_blank"
-                  >г. Киев, пр-т Леси Украинки, 26</a
-                >
+        <div class="wrapper">
+          <div class="contacts-wrapper">
+            <a class="logo link" href="./index.html" lang="en"
+              >Web<span class="logo__studio_color_white">Studio</span></a
+            >
+            <address class="address">
+              <ul class="address__list list">
+                <li class="address__item">
+                  <a
+                    class="address__link address__link_color_white link"
+                    href="https://goo.gl/maps/qhGqYUwrLDQrgfdt8"
+                    target="_blank"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a class="address__link link" href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a class="address__link link" href="tel:+380991111111"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="social-wrapper">
+            <p class="subtitle subtitle_color_white footer__subtitle">присоединяйтесь</p>
+            <ul class="social__list list">
+              <li class="social__item">
+                <a class="social__link social__link_bgc" href="" aria-label="instagram">
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item">
-                <a class="address__link link" href="mailto:info@example.com"
-                  >info@example.com</a
-                >
+              <li class="social__item">
+                <a class="social__link social__link_bgc" href="" aria-label="twitter">
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item">
-                <a class="address__link link" href="tel:+380991111111"
-                  >+38 099 111 11 11</a
-                >
+              <li class="social__item">
+                <a class="social__link social__link_bgc" href="" aria-label="facebook">
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link_bgc" href="" aria-label="linkedin">
+                  <svg class="social__icon" width="20" height="20">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="center-wrapper">
-          <p class="subtitle subtitle_color_white">присоединяйтесь</p>
-          <ul class="social__list list">
-            <li class="social__item">
-              <a class="social__link" href="" aria-label="instagram">
-                <svg class="social__icon" width="20" height="20">
-                  <use href="./images/icons.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="" aria-label="twitter">
-                <svg class="social__icon" width="20" height="20">
-                  <use href="./images/icons.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="" aria-label="facebook">
-                <svg class="social__icon" width="20" height="20">
-                  <use href="./images/icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="" aria-label="linkedin">
-                <svg class="social__icon" width="20" height="20">
-                  <use href="./images/icons.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="subscription">
-          <p class="subtitle">Подпишитесь на рассылку</p>
-          <form class="form">
+          <p class="subtitle subtitle_color_white footer__subtitle">Подпишитесь на рассылку</p>
+          <form class="subscription__form">
             <input
-              class="input"
+              class="subscription__input"
               type="email"
               name="user_email"
               placeholder="E-mail"
             />
-            <button class="button button_primary" type="submit">
+            <button class="button button_primary subscription__button" type="submit">
               Подписаться
-              <svg class="icon" width="24" height="24">
+              <svg class="button-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>

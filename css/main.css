@@ -32,15 +32,10 @@
   overflow: hidden;
 }
 
-.contact-form .input:focus,
+.contact-form .input:focus, .subscription__input:focus,
 .comment:focus {
   outline: none;
   border-color: var(--accent-color);
-}
-
-.footer__subtitle {
-  color: var(--extra-text-color);
-  margin-bottom: 20px;
 }
 
 body {
@@ -74,6 +69,10 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+address {
+  font-style: normal;
 }
 
 .list {
@@ -202,6 +201,15 @@ img {
   color: var(--secondary-text-color);
 }
 
+.subtitle_color_white {
+  color: var(--extra-text-color);
+  margin-bottom: 0px;
+}
+
+.footer__subtitle {
+  margin-bottom: 20px;
+}
+
 @media screen and (max-width: 767.98px) {
   .subtitle {
     text-align: center;
@@ -241,6 +249,10 @@ img {
 
 .social__link:hover, .social__link:focus {
   background-color: var(--accent-color);
+}
+
+.social__link_bgc {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .social__icon {
@@ -862,10 +874,6 @@ img {
     text-align: center;
     background-color: rgba(47, 48, 58, 0.8);
   }
-  .subtitle_color_white {
-    color: var(--extra-text-color);
-    margin-bottom: 0px;
-  }
 }
 
 .team {
@@ -988,9 +996,8 @@ img {
   color: var(--logo-primary-color-footer);
 }
 
-.address__list {
+.address {
   margin-top: 20px;
-  font-style: normal;
 }
 
 .address__item:not(:last-child) {
@@ -998,7 +1005,7 @@ img {
 }
 
 .address__link {
-  color: var(--contacts-footer-color);
+  color: var(--address-footer-color);
   transition: color var(--duration) var(--timing-function);
 }
 
@@ -1008,6 +1015,47 @@ img {
 
 .address__link_color_white {
   color: var(--extra-text-color);
+}
+
+.center-wrapper {
+  margin-top: 58px;
+  margin-bottom: 60px;
+}
+
+.subscription__input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: 0px 16px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--extra-text-color);
+  transition: border-color var(--duration) var(--timing-function);
+}
+
+.subscription__input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--address-footer-color);
+}
+
+.subscription__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-icon {
+  margin-left: 10px;
+  fill: var(--primary-bg-color);
 }
 
 .filters-list {
