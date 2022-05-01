@@ -265,6 +265,10 @@ address {
   fill: var(--extra-text-color);
 }
 
+.social__icon_color_white {
+  fill: var(--extra-text-color);
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -988,8 +992,8 @@ address {
 }
 
 .footer {
+  padding: 60px 0px;
   background-color: var(--footer-bg-color);
-  text-align: center;
 }
 
 .logo__studio_color_white {
@@ -1017,17 +1021,9 @@ address {
   color: var(--extra-text-color);
 }
 
-.center-wrapper {
-  margin-top: 58px;
-  margin-bottom: 60px;
-}
-
 .subscription__input {
-  display: block;
-  width: 100%;
   height: 50px;
   padding: 0px 16px;
-  margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: transparent;
@@ -1058,104 +1054,95 @@ address {
   fill: var(--primary-bg-color);
 }
 
-.filters-list {
+@media screen and (max-width: 767.98px) {
+  .social-wrapper {
+    margin: 60px 0px;
+  }
+  .subscription__input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  .footer {
+    text-align: center;
+  }
+  .subscription__input {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .footer-container {
+    padding: 0px 90px;
+  }
+  .contacts-social-wrapper {
+    margin-bottom: 60px;
+  }
+  .subscription__input {
+    display: inline-block;
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-social-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .contacts-wrapper {
+    margin-right: 86px;
+  }
+  .subscription__form {
+    display: flex;
+  }
+  .subscription__input {
+    width: 358px;
+    margin-right: 12px;
+  }
+}
+
+.filters__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 50px;
 }
 
-.filters-list .item:not(:last-child) {
-  margin-right: 8px;
-}
-
-.button.secondary {
+.button_secondary {
   padding: 6px 22px;
   font-weight: 500;
-  line-height: 1.63;
+  font-size: 16px;
+  line-height: 1.625;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   background-color: var(--secondary-bg-color);
   transition: background-color var(--duration) var(--timing-function), color var(--duration) var(--timing-function), box-shadow var(--duration) var(--timing-function);
 }
 
-.button.secondary:hover, .button.secondary:focus {
+.button_secondary:hover, .button_secondary:focus {
   color: var(--extra-text-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.card-set {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: calc(-1 * var(--card-set-gap));
-  margin-top: calc(-1 * var(--card-set-gap));
-}
-
-.card-set > .item {
-  flex-basis: calc(100% / 3 - var(--card-set-gap));
-  margin-left: var(--card-set-gap);
-  margin-top: var(--card-set-gap);
-}
-
-.card-set .link {
-  display: block;
-  transition: box-shadow var(--duration) var(--timing-function);
-}
-
-.card-set .link:hover, .card-set .link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.card-set .link:hover .overlay-portfolio,
-.card-set .link:focus .overlay-portfolio {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.project-title {
-  margin-bottom: 4px;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--secondary-text-color);
-}
-
-.project-description {
-  font-size: 16px;
-  line-height: 1.87;
-  color: var(--primary-text-color);
-}
-
-.card-content {
-  padding: 20px 24px;
-  border: 1px solid #eeeeee;
-  border-top: none;
-}
-
-.thumb-portfolio {
-  position: relative;
-  overflow: hidden;
-}
-
-.overlay-portfolio {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 100%;
-  padding: 24px;
-  overflow-y: auto;
-  font-size: 18px;
-  line-height: 1.56;
-  background-color: rgba(33, 150, 243, 0.9);
-  color: var(--extra-text-color);
-  opacity: 0;
-  transform: translateY(100%);
-  transition: transform var(--duration) var(--timing-function);
+@media screen and (max-width: 767.98px) {
+  .filters__list {
+    margin-left: -8px;
+    margin-top: -15px;
+    margin-bottom: 40px;
+  }
+  .filters__item {
+    margin-left: 8px;
+    margin-top: 15px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

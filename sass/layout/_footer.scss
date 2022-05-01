@@ -1,6 +1,7 @@
+// COMMON
 .footer {
+    padding: 60px 0px;
     background-color: var(--footer-bg-color);
-    text-align: center;
 }
 
 .logo__studio_color_white {
@@ -29,17 +30,9 @@
     color: var(--extra-text-color);
 }
 
-.center-wrapper {
-    margin-top: 58px;
-    margin-bottom: 60px;
-}
-
 .subscription__input {
-    display: block;
-    width: 100%;
     height: 50px;
     padding: 0px 16px;
-    margin-bottom: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     background-color: transparent;
@@ -69,82 +62,72 @@
     fill: var(--primary-bg-color)
 }
 
-@media screen and (min-width: 768px) {
-    
+// 0-767px only PHONES
+@media screen and (max-width: 767.98px) {
+    .social-wrapper {
+        margin: 60px 0px;
+    }
+
+    .subscription__input {
+        width: 100%;
+    }
 }
 
+// 0-1199px PHONES and TABLETS
+@media screen and (max-width: 1199.98px) {
+    .footer {
+        text-align: center;
+    }
 
-// .footer {
-//     padding-top: 60px;
-//     padding-bottom: 60px;
-//    }
+    .subscription__input {
+        display: block;
+        margin-bottom: 20px;
+    }
+}
 
+// 768-1199px only TABLETS
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    .footer-container {
+        padding: 0px 90px;
+    }
 
-// .footer-container {
-//     display: flex;
-//     align-items: baseline;
-// }
+    .contacts-social-wrapper {
+        margin-bottom: 60px;
+    }
 
-// .left-side-wrapper {
-//     margin-right: 70px;
-// }
+    .subscription__input {
+        display: inline-block;
+        width: 450px;
+    }
+}
 
-// .address__list {
-//     ;
-//     width: 230px;
-//     
-// }
+// 768px+ TABLETS and DESKTOPS
+@media screen and (min-width: 768px) {
+    .contacts-social-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+}
 
-// .center-wrapper {
+// 1200px+ DESKTOPS
+@media screen and (min-width: 1200px) {
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
 
-//     .subtitle {
-//         @extend %footer-subtitle;
-//     }
+    .contacts-wrapper {
+        margin-right: 86px;
+    }
 
-//     .social__list {
-//         justify-content: start;
-//     }
+    .subscription__form {
+        display: flex;
+    }
 
-//     .social__link {
-//         background-color: rgba(255, 255, 255, 0.1);
-//     }
-
-//     .social__icon {
-//         fill: var(--extra-text-color);
-//     }
-// }
-
-// .subscription {
-//     margin-left: auto;
-
-//     .subtitle {
-//         @extend %footer-subtitle;
-//     }
-
-//     .input {
-//         display: block;
-    
-//         width: 358px;
-//         height: 50px;
-//         padding: 0px 16px;
-//         margin-right: 12px;
-    
-//         
-//         
-//         }
-
-//         
-//     }
-
-//     .button_primary {
-//         
-//     }
-
-//     .icon {
-//         
-//     }
-
-//     .form {
-//         display: flex;
-//     }
-// }
+    .subscription__input {
+        width: 358px;
+        margin-right: 12px;
+    }
+}
