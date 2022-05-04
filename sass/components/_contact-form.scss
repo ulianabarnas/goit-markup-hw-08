@@ -47,7 +47,6 @@
     resize: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-
     transition: border-color var(--duration) var(--timing-function);
 
     &::placeholder {
@@ -103,7 +102,6 @@
     top: 0;
     left: 0;
     opacity: 0;
-
     transition: opacity var(--duration) var(--timing-function);
 
     .checkbox:checked+.checkbox__label & {

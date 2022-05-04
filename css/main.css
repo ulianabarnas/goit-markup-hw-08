@@ -546,6 +546,7 @@ address {
     transition: opacity var(--duration) var(--timing-function), visibility var(--duration) var(--timing-function);
   }
   .mobile-menu.is-open {
+    position: fixed;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
